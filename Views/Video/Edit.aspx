@@ -5,10 +5,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Edit</title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
-    
-    </div>
+    <form action="/Video/Edit" method="post">
+        <fieldset>
+        <legend>Modificar Video</legend>
+        <label for="idVideo">ID del video</label>
+        <input type="text" name="idVideo" />
+
+        <label for="titulo">Nuevo Titulo</label>
+        <input type="text" name="titulo" />
+
+        <label for="repro">Nuevo numero de reproducciones</label>
+        <input type="text" name="repro" />
+
+        <label for="link">Nuevo link</label>
+        <input type="text" name="link" />
+
+        <input type="submit" name="modificar" value="Modificar" />
+
+        </fieldset>
+    </form>
 </body>
 </html>
