@@ -13,7 +13,7 @@ END;
 
 
 CREATE PROCEDURE sp_video_insertar
-@idVideo INT, @titulo VARCHAR, @repro INT, @link VARCHAR
+@idVideo INT, @titulo VARCHAR(50), @repro VARCHAR(50), @link VARCHAR(50)
 AS
 BEGIN
 	INSERT INTO video 
@@ -22,7 +22,7 @@ END;
 
 
 CREATE PROCEDURE sp_video_modificar
-@idVideo INT, @titulo VARCHAR, @repro VARCHAR, @link VARCHAR
+@idVideo INT, @titulo VARCHAR(50), @repro VARCHAR(50), @link VARCHAR(50)
 AS
 BEGIN
 	UPDATE video SET titulo=@titulo,repro=@repro,link=@link WHERE idVideo=@idVideo;
